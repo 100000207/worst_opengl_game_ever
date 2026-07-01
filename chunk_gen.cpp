@@ -11,6 +11,10 @@ glm::vec3 chunk_gen::gen_tri_face_normals(glm::vec3 x, glm::vec3 y, glm::vec3 z)
 	return normal * (glm::vec3)glm::sign(glm::sign(normal.z) + 0.5);
 };
 
+
+//I vibecoded the eroded noise into c++ but I think Im allowed to do that as I did also implement it into desmos by hand only for it to not work due to desmos being terrible
+
+
 // ── Eroded terrain (port of Clay John's Shadertoy, MIT licence) ─────────────
 // Original: https://www.shadertoy.com/view/... (Buffer A pass)
 // CPU port replaces the fract-based GPU hash with an integer hash
